@@ -17,6 +17,7 @@
       <link rel="stylesheet" href="css/frontend-grid.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/mobile.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!--[if IE]>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.0/mootools-yui-compressed.js"></script>
       <script type="text/javascript" src="js/selectivizr-min.js"></script>
@@ -24,7 +25,11 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
    </head>
+
+    
+  
    <body>
+
       <div id="page">
          <!-- Preloader -->
          <div id="page-preloader">
@@ -42,11 +47,26 @@
             <div class="fw-container centered-container tar">
                <div class="container tar fw-col-xs-12 fw-col-sm-6 fw-col-md-5">
                   <h2 class="h1"><span class="blue-color"> We are Here To Helping You</span><br>To Explore Your Rare Diseases</h2>
-                  <p>Check Out Our Services!</p>
-                  <a href="javascript:void(0);" class="button-style1"><span>CHECK OUT</span></a><a href="javascript:void(0);" class="button-style1 dark"><span>more info</span></a>
+                 
+                <!--  <form class="example"  style="margin:auto;max-width:700px">
+                     <input type="text" placeholder="Search.." name="search2" value="" id="search2" onchange="openPage()">
+                     <button type="submit"><i class="fa fa-search"></i></button>
+                   </form> -->
+                  
+                   <input type="text" id="SearchTxt"  style="width: 460px;"/>
+                   <input type="submit" id="SearchBtn" value="Search" onclick="doSearch(document.getElementById('SearchTxt').value)"  />
+                  
+                 
+                  
                </div>
+       
             </div>
+            
+        
+
          </section>
+         <!-- Load icon library -->
+
          <!-- END Full screen section -->
          <!-- Category items -->
          <section class="fw-main-row pt45 pb20">
@@ -57,7 +77,7 @@
                      <!-- Category item -->
                      <div class="category-item" style="background-image: url(../diseases/1.jpg);">
                         <div class="centered-container">
-                           <a href="private-clinic.html" class="button-style2 white big"><span>Cancer Diseases</span></a>
+                           <a href="cancer.html" class="button-style2 white big"><span>Cancer Diseases</span></a>
                         </div>
                      </div>
                      <!-- END Category item -->
@@ -66,7 +86,7 @@
                      <!-- Category item -->
                      <div class="category-item" style="background-image: url(../diseases/2.jpg)">
                         <div class="centered-container">
-                           <a href="plastic-surgery.html" class="button-style2 white big"><span>Genetic Diseases</span></a>
+                           <a href="genatics.html" class="button-style2 white big"><span>Genetic Diseases</span></a>
                         </div>
                      </div>
                      <!-- END Category item -->
@@ -75,7 +95,7 @@
                      <!-- Category item -->
                      <div class="category-item" style="background-image: url(../diseases/3.jpg)">
                         <div class="centered-container">
-                           <a href="dental.html" class="button-style2 white big"><span> Liver diseases</span></a>
+                           <a href="Digestive.html" class="button-style2 white big"><span> Liver diseases</span></a>
                         </div>
                      </div>
                      <!-- END Category item -->
@@ -84,13 +104,13 @@
             </div>
          </section>
          <!-- END Category items -->
-         <section class="fw-main-row dark-bg pt20" style="background-image: url(../Dr/3.jpg)">
+      <!--   <section class="fw-main-row dark-bg pt20" style="background-image: url(../Dr/3.jpg)">
             <div class="fw-container">
-               <h2 class="heading-decor pb20">Our Members</h2>
+               <h2 class="heading-decor pb20">Our Members</h2> -->
                <!-- Team carousel -->
-               <section class="team-carousel">
+          <!--    <section class="team-carousel"> -->
                   <!-- Team item -->
-                  <div class="team-item">
+                 <!--   <div class="team-item">
                      <div class="image"><a href="doctor-personal-page.html"><img src="../Dr/2.png" alt="Dr. Mark Lowson"></a></div>
                      <div class="name">
                         <h4>Dr. Mark Lowson</h4>
@@ -111,10 +131,10 @@
                         </div>
                      </div>
                      <a href="doctor-personal-page.html" class="button-style2"><span>read profile</span></a>
-                  </div>
+                  </div> -->
                   <!-- END Team item -->
                   <!-- Team item -->
-                  <div class="team-item">
+                 <!--   <div class="team-item">
                      <div class="image"><a href="doctor-personal-page.html"><img src="../Dr/1.png" alt="Dr. Lara Crow"></a></div>
                      <div class="name">
                         <h4>Dr. Lara Crow</h4>
@@ -135,10 +155,10 @@
                         </div>
                      </div>
                      <a href="doctor-personal-page.html" class="button-style2"><span>read profile</span></a>
-                  </div>
+                  </div> -->
                   <!-- END Team item -->
                   <!-- Team item -->
-                  <div class="team-item">
+             <!--       <div class="team-item">
                      <div class="image"><a href="doctor-personal-page.html"><img src="../Dr/2.png" alt="Dr. Marketa Brown"></a></div>
                      <div class="name">
                         <h4>Dr. Marketa Brown</h4>
@@ -159,10 +179,10 @@
                         </div>
                      </div>
                      <a href="doctor-personal-page.html" class="button-style2"><span>read profile</span></a>
-                  </div>
+                  </div> -->
                   <!-- END Team item -->
                   <!-- Team item -->
-                  <div class="team-item">
+             <!--       <div class="team-item">
                      <div class="image"><a href="doctor-personal-page.html"><img src="../Dr/1.png" alt="Dr. Mark Lowson"></a></div>
                      <div class="name">
                         <h4>Dr. Mark Lowson</h4>
@@ -183,10 +203,10 @@
                         </div>
                      </div>
                      <a href="doctor-personal-page.html" class="button-style2"><span>read profile</span></a>
-                  </div>
+                  </div> -->
                   <!-- END Team item -->
                   <!-- Team item -->
-                  <div class="team-item">
+         <!--           <div class="team-item">
                      <div class="image"><a href="doctor-personal-page.html"><img src="../Dr/2.png" alt="Dr. Lara Crow"></a></div>
                      <div class="name">
                         <h4>Dr. Lara Crow</h4>
@@ -207,10 +227,10 @@
                         </div>
                      </div>
                      <a href="doctor-personal-page.html" class="button-style2"><span>read profile</span></a>
-                  </div>
+                  </div> -->
                   <!-- END Team item -->
                   <!-- Team item -->
-                  <div class="team-item">
+               <!--     <div class="team-item">
                      <div class="image"><a href="doctor-personal-page.html"><img src="../Dr/1.png" alt="Dr. Marketa Brown"></a></div>
                      <div class="name">
                         <h4>Dr. Marketa Brown</h4>
@@ -231,21 +251,21 @@
                         </div>
                      </div>
                      <a href="doctor-personal-page.html" class="button-style2"><span>read profile</span></a>
-                  </div>
+                  </div> -->
                   <!-- END Team item -->
-               </section>
+               <!--     </section> -->
                <!-- END Team carousel -->
             </div>
          </section>
          <section class="fw-main-row pt40 pb40">
             <div class="fw-container">
-               <h2 class="heading-decor pb35">Our Services</h2>
+               <h2 class="heading-decor pb35">Our Department</h2>
                <div class="fw-row">
                   <!-- Icon box -->
                   <div class="fw-col-sm-6 icon-box-item">
                      <div class="icon medical-icon med-icon-dna"></div>
                      <div class="text">
-                        <div class="h4" ><a href="genatics.html">Genetic Diseases</a></div>
+                        <div class="h4" id="Genetic" ><a href="genatics.html">Genetic Diseases</a></div>
                         <p>Sirius WordPress Theme features a slick and clean design that is suitable for virtually any type of website</p>
                      </div>
                   </div>
@@ -451,6 +471,23 @@
      
        </script>
 
+<script>
+   function doSearch(text) {
+       if (window.find(text)) {
+           console.log(window.find(text));
+       }
+   }
 
+   $("#SearchTxt").bind("keypress", {}, keypressInBox);
+
+function keypressInBox(e) {
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if (code == 13) { //Enter keycode                        
+        e.preventDefault();
+
+        doSearch(document.getElementById('SearchTxt').value)
+    }
+};
+</script>
    </body>
 </html>
