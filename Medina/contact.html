@@ -41,8 +41,7 @@
 				<div class="fw-container centered-container tac">
 					<div class="container tac">
 						<h2 class="h1 big" style="color: #fff;"><span class="blue-color">Helping You</span><br>Stay Happy One</h2>
-						<p style="color: #000;">Check Out Our Services!</p>
-						<a href="javascript:void(0);" class="button-style1"><span>CHECK OUT</span></a><a href="javascript:void(0);" class="button-style1 dark"><span>more info</span></a>
+						
 					</div>
 				</div>
 			</section>
@@ -53,15 +52,15 @@
 					<div class="fw-row pt10">
 						<div class="fw-col-xs-12 fw-col-sm-4 contact-col">
 							<div class="icon icon-font icon-placeholder-1"></div>
-							<p>4321 Your Address,<br>Country, Postcode</p>
+							<p>Abdulrahman Al Dakheel,<br>An Nahdah, Jeddah</p> 
 						</div>
 						<div class="fw-col-xs-12 fw-col-sm-4 contact-col">
 							<div class="icon icon-font icon-telephone-1"></div>
-							<p><a href="tel:880023367811">8 800 2336 7811</a><br><a href="tel:898827371132">8 988 2737 1132</a></p>
+							<p><a href="tel: 012 601 0799"> 012 601 0799</a></p>
 						</div>
 						<div class="fw-col-xs-12 fw-col-sm-4 contact-col">
 							<div class="icon icon-font icon-envelope"></div>
-							<p><a href="mailto:support@promo-themes.com">support@promo-themes.com</a></p>
+							<p><a href="mailto:support@promo-themes.com">gama-cs@gama-ksa.com</a></p>
 						</div>
 					</div>
 				</div>
@@ -130,16 +129,20 @@
 						<div class="fw-col-sm-6 fw-col-md-3"><input type="text" placeholder="Date & Time for call" class="style1"></div>
 						<div class="fw-col-md-12">
 							<textarea placeholder="What is the nature of your appointment and who would you like to see? *" class="style1"></textarea>
-							<div class="tac"><button type="submit" class="button-style1"><span>send request</span></button></div>
+							<div class="tac"><button type="submit" class="button-style1" onclick="myFunction()" ><span>send request</span></button></div>
 						</div>
 					</form>
 				</div>
+			
 			</section>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4573.664416949811!2d39.12984121536072!3d21.61869827275157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3dbc13ebb6dbb%3A0x84f2d06bf9524339!2z2KfZhNi02LHZg9ipINin2YTYudix2KjZitipINin2YTYtNin2YXZhNipINmE2YTYqti32KjZitmC2KfYqiDYp9mE2K3Yr9mK2KvYqSDYp9mE2YXYrdiv2YjYr9ip!5e1!3m2!1sen!2ssa!4v1640004774886!5m2!1sen!2ssa" width="3000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			<!-- END Feedback form -->
 			<!-- Map -->
-			<div class="fw-main-row">
+		<!--	<div class="fw-main-row">
+				
 				<div id="map" style="height: 395px; width: 100%;"></div>
-			</div>
+				
+			</div> -->
 			<!-- END Map -->
 			<div id='divFooter'>
 
@@ -147,7 +150,8 @@
 		</div>
 		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 		<!-- Map scripts -->
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyBqnMfRjGOw09DMXjrd5vbTgiRHRntQ7N0&amp;sensor=false"></script>
+
+		
 		<script>
 			function initialize() {
 				var myLatlng = new google.maps.LatLng(37.319836, -122.045168);
@@ -188,5 +192,10 @@
 			});
 		
 		  </script>
+		  <script>
+			function myFunction() {
+			  alert("Your Request has been Successfully Sent..");
+			}
+			</script>
 	</body>
 </html>
