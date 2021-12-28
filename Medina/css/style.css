@@ -2072,3 +2072,158 @@ form.example::after {
   clear: both;
   display: table;
 }
+
+
+.wrapper{
+	position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(204, 229, 255,0.6);
+  
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.wrapper .input {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.searchbtn {
+    background: #00BFFF;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.searchbtn .fas{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+/* Hero Search Categories */
+.search-categories{
+  
+    position: relative;
+    margin-top: 12px;
+   
+    display: block;
+    padding: 15px;
+    color: #fff;
+    max-height: 93px;
+    text-align: center;
+    z-index: 4;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 0;
+    opacity: 1;
+    top: 90px;
+}
+.open-cities-list .search-categories{
+    opacity: 0;
+    top: -6000px;
+}
+.search-categories.hide-feat{
+    width: 80% !important;
+    left: 10% !important;
+}
+.search-categories .categories{
+    margin-top: 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 10px 0 10px;
+}
+.search-categories .categories a{
+    text-transform: uppercase;
+    display: inline-block;
+    min-width: 100px;
+    font-size: 13px;
+    
+    margin: 3px 1px;
+    padding: 8px 12px 10px 12px;
+    font-weight: normal;
+    color: #fff;
+    width: auto;
+    font-family: 'Roboto';
+}
+.light .search-categories .categories a{
+    color: rgb(235, 240, 177 );
+
+    text-shadow: 0 0 40px #fff, 0 0 40px #fff, 0 0 20px #fff;
+}
+.search-categories .categories a:before{
+    display: block;
+    font-size: 25px;
+    padding: 6px;
+    padding-bottom: 10px;
+}
+.search-categories .categories a:hover{
+    background-color: rgb(235, 240, 177 );
+
+    color: #fff;
+    border-radius: 15px 0;
+}
+.search-categories .more-categories,
+.search-categories .minus-categories{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    display: none;
+    cursor: pointer;
+    color: #00BFFF;
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.light .search-categories .more-categories,
+.light .search-categories .minus-categories{
+    color: #00BFFF;
+    text-shadow: none;
+}
+.search-categories .more-categories:hover,
+.search-categories .minus-categories:hover{
+    opacity: 0.6;
+}
+.show-categories{
+    position: relative;
+    left: 25%;
+    display: block;
+    width: 33px;
+    text-align: left;
+    color: #fff;
+    font-family: 'Capriola', sans-serif;
+    margin-top: 10px;
+}
+.show-categories:before{
+    font-family: "FontAwesome";
+    content: "\f00d";
+    position: relative;
+    background: rgba(255,255,255,0.2);
+    padding: 7px 1px 4px 2px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 26px;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+.show-categories:hover:before{
+    background: rgb(177, 214, 240);
+    color: #fff;
+}
+/* Hero Search Cities */

@@ -18,6 +18,7 @@
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/mobile.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
       <!--[if IE]>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.0/mootools-yui-compressed.js"></script>
       <script type="text/javascript" src="js/selectivizr-min.js"></script>
@@ -43,19 +44,48 @@
         
          <!-- END Header -->
          <!-- Full screen section -->
-         <section class="full-screen fw-main-row" style="background-image: url('../header/doctor.jpg'); ">
+         <section class="full-screen fw-main-row" style="background-image: url('../header/doctor.jpg'); box-shadow: 0 10000px rgb(0 0 0 / 60%) inset; ">
             <div class="fw-container centered-container tar">
                <div class="container tar fw-col-xs-12 fw-col-sm-6 fw-col-md-5">
-                  <h2 class="h1"><span class="blue-color"> We are Here To Helping You</span><br>To Explore Your Rare Diseases</h2>
+                  <h2 class="h1" style="color: aliceblue;"><span class="blue-color"> We are Here To Helping You</span><br>To Explore Your Rare Diseases</h2>
                  
                 <!--  <form class="example"  style="margin:auto;max-width:700px">
                      <input type="text" placeholder="Search.." name="search2" value="" id="search2" onchange="openPage()">
                      <button type="submit"><i class="fa fa-search"></i></button>
                    </form> -->
+                   <div class="wrapper">
+                   <input type="text" id="SearchTxt"  class="input" placeholder="What are you looking for?" >
+                   <div class="searchbtn" id="SearchBtn" value="Search" onclick="doSearch(document.getElementById('SearchTxt').value)" ><i class="fas fa-search"></i></div>
                   
-                   <input type="text" id="SearchTxt"  style="width: 460px;"/>
-                   <input type="submit" id="SearchBtn" value="Search" onclick="doSearch(document.getElementById('SearchTxt').value)"  />
+                  </div>
+    
+               <!-- End Hero Search -->
+               <!-- Start Search Categories -->
+               <div class="search-categories">
+                 <div class="categories" >
+            
+                   <a class="icon medical-icon med-icon-dna" href="genatics.html">Genetic </a>
+                   <a class="icon medical-icon med-icon-stomach" href="Digestive.html">Digestive</a>
+                   <a class="icon medical-icon med-icon-premolar" href="teeth.html">Teeth</a>
+                   <a class="icon medical-icon med-icon-brain" href="Brain_and_Nerve_Diseases.html">Brain  </a>
+                   <a class="icon medical-icon med-icon-heart" href="heart_disease.html">Heartnand </a>
+                   <a class="icon medical-icon med-icon-eye" href="eye.html">Eye</a>
+                   <a class="icon medical-icon med-icon-virus" href="cancer.html">Cancer </a>
+                   
+                   <a class="icon medical-icon med-icon-lungs" href="chest.html">Chest's </a>
+                   <a class="icon medical-icon med-icon-drugs-3" href="Psychological.html">Psychological </a>
+                   <a class="icon medical-icon med-icon-ear" href="ear.html">Ear, Nose and Throat</a>
+                  </div>
+       
+               </div>
+               
+                   <div class="search-categories">
+                     <div class="categories" > 
                   
+                 </div>
+               </div>
+               <!-- End Search Categories -->
+
                  
                   
                </div>
